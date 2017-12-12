@@ -201,7 +201,7 @@ def radix_sorting_procedure(array):
     return array
     
 
-def lsd_radixSort(array):
+def lsd_radixsort(array):
     '''
     
     Arguments:
@@ -262,8 +262,6 @@ def lsd_radixSort(array):
 
 # testing
 # big_array = random.sample(range(-1000, 10000), 10000)
-test_array = [-20,1,4,5,-10,6,7,8,9,0,1,100]
-test_empty_array = [1,2]
-print lsd_radixSort(test_array)
-
-#print all(isinstance(item, int) for item in test_array)
+# test_array = [-20,1,4,5,-10,6,7,8,9,0,1,100]
+# test_empty_array = [1,2]
+# print lsd_radixSort(test_array)
