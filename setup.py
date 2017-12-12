@@ -1,13 +1,13 @@
 from distutils.core import setup
 setup(
-  name = 'radixsort',
-  packages = ['mypackage'], # this must be the same as the name above
+  name = 'lsd_radixsort',
+  packages = ['lsd_radixsort'],
   version = '0.1',
-  description = 'A random test lib',
-  author = 'Peter Downs',
-  author_email = 'peterldowns@gmail.com',
-  url = 'https://github.com/peterldowns/mypackage', # use the URL to the github repo
-  download_url = 'https://github.com/peterldowns/mypackage/archive/0.1.tar.gz', # I'll explain this in a second
-  keywords = ['testing', 'logging', 'example'], # arbitrary keywords
+  description = 'Implements the least signficant digit version of radix sort, and has the ability to sort negative and positive integers in an array',
+  author = 'Seth Michael Fuchs',
+  author_email = 'seth@minerva.kgi.edu',
+  url = 'https://github.com/Sethfuchs/lsd_radixsort', # use the URL to the github repo
+  download_url = 'https://github.com/Sethfuchs/lsd_radixsort/archive/0.1.tar.gz', # I'll explain this in a second
+  keywords = ['sorting', 'radix', 'sort'], 
   classifiers = [],
 )
