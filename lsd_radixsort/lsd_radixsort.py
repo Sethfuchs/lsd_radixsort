@@ -179,7 +179,11 @@ def split_absolute_pos_neg(array):
 
 def radix_sorting_procedure(array):
     '''
-    Hello
+    Takes in an unsorted array of positive or negative integers and
+    executes the subroutines necessary to sort the list. The function returns
+    the sorted version of the array parsed into it. This function is separate
+    from the lsd_radixsort() function below so as to accomodate the separate
+    sorting procedures for positive and negative integers.
     '''
     # Buckets should be initialized up to the point where we have reached the
     # maximum number of digits for the integer in the list that has the most
@@ -214,6 +218,14 @@ def lsd_radixsort(array):
     Executes the radix sorting procedure using supplementary functions within
     this module.
 
+    This is the function that must be called upon from the lsd_radixsort
+    module to sort a given array of intergers.
+
+    Primary reason for separation of this function from
+    radix_sorting_procedure() above is to faciliate the splitting of
+    positive and negative integers for independent radix sorting and
+    re-merging.
+
     Arguments:
 
     array: list
@@ -221,7 +233,7 @@ def lsd_radixsort(array):
         sorting
     '''
 
-    # Base tests
+    # Tests
     # raise error if empty list
     if len(array) >= 1:
         pass
@@ -271,5 +283,6 @@ def lsd_radixsort(array):
 # testing
 # big_array = random.sample(range(-1000, 10000), 10000)
 # test_array = [-20,1,4,5,-10,6,7,8,9,0,1,100]
+# neg_only_array = [-20,-100,-5,-3,-1000,-10000,-10430343,-50,-3]
 # test_empty_array = [1,2]
-# print lsd_radixsort(test_array)
+# print lsd_radixsort(neg_only_array)
