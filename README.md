@@ -39,13 +39,13 @@ pip install lsd_radixsort
 If you can't seem to grab it from PyPi, you can download it from github using this [link](https://github.com/Sethfuchs/lsd_radixsort/archive/0.3.tar.gz). Then extract the file locally, navigate to its director on your command line, and execute (in the root):
 
 ~~~~
-\> python setup.py install --user
+python setup.py install --user
 ~~~~
 
 Then, in a python instance, you can import the module by running:
 
 ~~~~
-\> from lsd_radixsort import lsd_radixsort
+from lsd_radixsort import lsd_radixsort
 ~~~~
 
 You're ready to go! 
@@ -58,6 +58,7 @@ After installing lsd_radixsort onto your local machine, try running the followin
 `
 low_digit_test_array = [-20,1,4,5,-10,6,7,8,9,0,1,100]
 `
+
 `
 lsd_radixsort.lsd_radixsort(low_digit_test_array)
 `
